@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style>
+        body{
+            background-color: white;
+            margin-left: 20px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14pt;
+        }
+
+        svg circle{
+            fill:steelblue;
+            stroke: none;
+        }
+        .y.axis line {
+            stroke:darkgrey;
+            opacity: .5;
+        }
+
+       .y.axis path {
+           display: none;
+       }
+       .x.axis path {
+
+            fill:none;
+            stroke:darkgrey;
+        }
+
+       .bar{
+           fill:steelblue;
+       }
+
+    </style>
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+
+</head>
+<body>
+    <p>Hallo</p>
+    <div id="visScales"></div>
+
+
+    <!-- Just a very simple example for a linear and logarithmic scale -->
+    <script>
+       var sX = d3.scale.linear().domain([1,10000]).range([1,100])
+       var sLog = d3.scale.log().domain([1,10000]).range([1,100])
+
+       console.log(sX(6000))
+       console.log("slog: "+ sLog(6000))
+    </script>
+
+
+
+    <!-- use scalesClean.js if you want the non-coffescript-versiopn !!-->
+    <script src="js/scales.js"></script>
+
+</body>
+</html>
