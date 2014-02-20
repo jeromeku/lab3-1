@@ -116,7 +116,7 @@ strategy was given in the lecture to D3:
 To allow staggering animations (see [Heer and Robertson](http://vis.berkeley.edu/papers/animated_transitions/)) we use the (absolutely cool) feature, that for 
 every parameter which we define for an element, we can access the attached data and data-index. As we read from the [documentation](https://github.com/mbostock/d3/wiki/Transitions) 
 we can parametrize transitions to start after a specific delay. We now define this delay in dependence of each elements index in the display list.
-And with this little trick, we are done.. Voila!
+And with this little trick, we are done.. Voilà!
 
 	svg.selectAll(".datapoint")
 		.transition()
